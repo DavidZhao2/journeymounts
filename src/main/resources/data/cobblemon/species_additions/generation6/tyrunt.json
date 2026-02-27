@@ -1,0 +1,59 @@
+{
+  "target": "cobblemon:tyrunt",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "25-40",
+          "JUMP": "20-35",
+          "SKILL": "40-60",
+          "SPEED": "25-40",
+          "STAMINA": "35-55"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.5,
+              "z": -0.1
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.04,
+              "y": -1.55,
+              "z": -0.2
+            },
+            "poseTypes": [
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": -0.02,
+              "y": -1.45,
+              "z": -0.25
+            },
+            "poseTypes": [
+              "GLIDE"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

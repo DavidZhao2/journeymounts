@@ -1,0 +1,49 @@
+{
+  "implemented": true,
+  "target": "wochien",
+  "baseScale": 1.0,
+  "hitbox": {
+    "width": 1.7,
+    "height": 1.45,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "canWalk": true,
+        "walkSpeed": 0.16,
+        "avoidsLand": false
+      },
+      "swim": {
+        "canSwimInWater": true,
+        "swimSpeed": 0.14,
+        "canBreatheUnderwater": true
+      }
+    }
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "35-55",
+          "JUMP": "20-35",
+          "SKILL": "30-50",
+          "SPEED": "35-55",
+          "STAMINA": "40-65"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

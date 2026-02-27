@@ -1,0 +1,59 @@
+{
+  "target": "cobblemon:glaceon",
+
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "20-45",
+          "ACCELERATION": "20-45",
+          "SKILL": "35-60",
+          "JUMP": "20-35",
+          "STAMINA": "25-50"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.15,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.2,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "behaviour": {
+    "herd": {
+      "maxSize": "3"
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  }
+}

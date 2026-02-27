@@ -1,0 +1,62 @@
+{
+  "target": "cobblemon:samurott",
+
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "20-40",
+          "ACCELERATION": "20-40",
+          "SKILL": "30-55",
+          "JUMP": "15-30",
+          "STAMINA": "40-70"
+        }
+      },
+      "LIQUID": {
+        "key": "cobblemon:liquid/dolphin",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.water_surface",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "SPEED": "30-55",
+          "ACCELERATION": "30-55",
+          "SKILL": "45-75",
+          "JUMP": "25-45",
+          "STAMINA": "50-85"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.15,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.5,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK",
+              "FLOAT",
+              "SWIM"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

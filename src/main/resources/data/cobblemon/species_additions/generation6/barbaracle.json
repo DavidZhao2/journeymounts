@@ -1,0 +1,108 @@
+{
+  "target": "cobblemon:barbaracle",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "25-40",
+          "ACCELERATION": "30-50",
+          "SKILL": "35-55",
+          "JUMP": "15-30",
+          "STAMINA": "40-65"
+        }
+      },
+      "LIQUID": {
+        "key": "cobblemon:liquid/dolphin",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.water_surface",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "SPEED": "30-55",
+          "ACCELERATION": "35-60",
+          "SKILL": "40-65",
+          "JUMP": "25-45",
+          "STAMINA": "45-75"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.6,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.03,
+              "y": -1.7,
+              "z": -0.1
+            },
+            "poseTypes": [
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": -0.02,
+              "y": -1.35,
+              "z": -0.2
+            },
+            "poseTypes": [
+              "HOVER"
+            ]
+          },
+          {
+            "offset": {
+              "x": -0.02,
+              "y": -1.35,
+              "z": -0.2
+            },
+            "poseTypes": [
+              "FLOAT"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -1.25,
+              "z": -0.25
+            },
+            "poseTypes": [
+              "SWIM"
+            ]
+          },
+          {
+            "offset": {
+              "x": -0.01,
+              "y": -1.8,
+              "z": -0.15
+            },
+            "poseTypes": [
+              "GLIDE"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

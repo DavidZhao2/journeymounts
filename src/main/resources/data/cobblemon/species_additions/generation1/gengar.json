@@ -1,0 +1,46 @@
+{
+  "target": "cobblemon:gengar",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "35-55",
+          "JUMP": "20-35",
+          "SKILL": "45-65",
+          "SPEED": "25-40",
+          "STAMINA": "30-55"
+        }
+      },
+      "AIR": {
+        "key": "cobblemon:air/hover",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "25-45",
+          "JUMP": "25-45",
+          "SKILL": "55-80",
+          "SPEED": "20-65",
+          "STAMINA": "30-100"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

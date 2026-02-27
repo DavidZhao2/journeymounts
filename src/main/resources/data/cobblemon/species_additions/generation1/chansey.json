@@ -1,0 +1,27 @@
+{
+  "target": "cobblemon:chansey",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "35-55",
+          "JUMP": "25-35",
+          "SKILL": "25-55",
+          "SPEED": "30-55",
+          "STAMINA": "50-100"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

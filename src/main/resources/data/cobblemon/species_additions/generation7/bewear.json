@@ -1,0 +1,81 @@
+{
+  "target": "cobblemon:bewear",
+
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "40-65",
+          "JUMP": "20-30",
+          "SKILL": "25-45",
+          "SPEED": "35-55",
+          "STAMINA": "55-85"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.1
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.05,
+              "y": -2.05,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -1.7,
+              "z": -0.15
+            },
+            "poseTypes": [
+              "HOVER"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -1.7,
+              "z": -0.15
+            },
+            "poseTypes": [
+              "GLIDE"
+            ]
+          },
+          {
+            "offset": {
+              "x": -0.03,
+              "y": -1.6,
+              "z": -0.1
+            },
+            "poseTypes": [
+              "FLOAT",
+              "SWIM"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

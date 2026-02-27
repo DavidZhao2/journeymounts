@@ -1,0 +1,58 @@
+{
+  "target": "cobblemon:whiscash",
+  "riding": {
+    "behaviours": {
+      "LIQUID": {
+        "key": "cobblemon:liquid/dolphin",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.water_surface",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "25-50",
+          "JUMP": "20-40",
+          "SKILL": "35-65",
+          "SPEED": "25-55",
+          "STAMINA": "40-75"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.1,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.2,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "STAND",
+              "FLOAT"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.15,
+              "z": -0.1
+            },
+            "poseTypes": [
+              "SWIM"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

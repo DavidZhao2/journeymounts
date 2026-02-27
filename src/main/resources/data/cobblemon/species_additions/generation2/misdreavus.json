@@ -1,0 +1,53 @@
+{
+  "target": "cobblemon:misdreavus",
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "key": "cobblemon:air/hover",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "30-50",
+          "JUMP": "10-20",
+          "SKILL": "50-75",
+          "SPEED": "20-35",
+          "STAMINA": "15-30"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -0.9,
+              "z": -0.2
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK",
+              "HOVER",
+              "FLY",
+              "FLOAT",
+              "SWIM",
+              "GLIDE"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

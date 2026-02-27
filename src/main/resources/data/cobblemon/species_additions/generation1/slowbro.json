@@ -1,0 +1,44 @@
+{
+  "target": "cobblemon:slowbro",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "18-30",
+          "ACCELERATION": "20-35",
+          "SKILL": "20-35",
+          "JUMP": "10-20",
+          "STAMINA": "65-95"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.25,
+              "z": -0.05
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK",
+              "HOVER",
+              "FLOAT",
+              "SWIM",
+              "GLIDE"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

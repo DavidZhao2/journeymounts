@@ -1,0 +1,8 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "journeymount:item/nitro_aprijuice",
+    "layer1": "journeymount:item/aprijuice_white_overlay_umbrella"
+
+  }
+}

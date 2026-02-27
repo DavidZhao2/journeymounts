@@ -1,0 +1,56 @@
+{
+  "target": "cobblemon:landorus",
+    "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "canWalk": true,
+        "walkSpeed": 0.2,
+        "avoidsLand": false
+      },
+      "swim": {
+        "canSwimInWater": true,
+        "swimSpeed": 0.26,
+        "canBreatheUnderwater": true
+      },
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "key": "cobblemon:air/bird",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "45-60",
+          "JUMP": "45-60",
+          "SKILL": "45-60",
+          "SPEED": "25-40",
+          "STAMINA": "45-60"
+        }
+      },
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "25-40",
+          "JUMP": "45-60",
+          "SKILL": "25-40",
+          "SPEED": "25-40",
+          "STAMINA": "45-60"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

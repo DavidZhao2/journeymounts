@@ -1,0 +1,49 @@
+{
+  "target": "cobblemon:umbreon",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "25-45",
+          "JUMP": "15-25",
+          "SKILL": "40-65",
+          "SPEED": "25-50",
+          "STAMINA": "45-70"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.1,
+              "z": 0.05
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -1.15,
+              "z": 0.07
+            },
+            "poseTypes": [
+              "WALK"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

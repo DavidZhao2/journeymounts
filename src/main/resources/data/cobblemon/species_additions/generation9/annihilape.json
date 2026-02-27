@@ -1,0 +1,104 @@
+{
+  "target": "cobblemon:annihilape",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "40-65",
+          "JUMP": "25-40",
+          "SKILL": "45-75",
+          "SPEED": "45-70",
+          "STAMINA": "50-85"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.85,
+              "z": -0.05
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.05,
+              "y": -1.95,
+              "z": -0.15
+            },
+            "poseTypes": [
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -1.5,
+              "z": -0.25
+            },
+            "poseTypes": [
+              "HOVER",
+              "FLOAT"
+            ]
+          },
+          {
+            "offset": {
+              "x": -0.03,
+              "y": -1.45,
+              "z": -0.3
+            },
+            "poseTypes": [
+              "SWIM"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -2.05,
+              "z": -0.2
+            },
+            "poseTypes": [
+              "GLIDE"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.22
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "7"
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  }
+}

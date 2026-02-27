@@ -1,0 +1,72 @@
+{
+  "target": "cobblemon:ampharos",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "20-40",
+          "ACCELERATION": "25-45",
+          "SKILL": "35-60",
+          "JUMP": "10-25",
+          "STAMINA": "30-55"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.6,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -1.65,
+              "z": -0.12
+            },
+            "poseTypes": [
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.15,
+              "z": -0.2
+            },
+            "poseTypes": [
+              "HOVER",
+              "FLY",
+              "GLIDE"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -1.35,
+              "z": -0.15
+            },
+            "poseTypes": [
+              "FLOAT",
+              "SWIM"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

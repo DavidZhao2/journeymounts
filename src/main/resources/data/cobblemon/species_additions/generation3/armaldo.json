@@ -1,0 +1,61 @@
+{
+  "target": "cobblemon:armaldo",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "15-35",
+          "ACCELERATION": "15-35",
+          "SKILL": "30-55",
+          "JUMP": "15-30",
+          "STAMINA": "40-70"
+        }
+      },
+      "LIQUID": {
+        "key": "cobblemon:liquid/dolphin",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.water_surface",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "SPEED": "25-50",
+          "ACCELERATION": "20-45",
+          "SKILL": "30-60",
+          "JUMP": "20-40",
+          "STAMINA": "45-75"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.1,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.15,
+              "z": -0.1
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK",
+              "FLOAT",
+              "SWIM"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

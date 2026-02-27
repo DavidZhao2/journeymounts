@@ -1,0 +1,63 @@
+{
+  "implemented": true,
+  "target": "yveltal",
+  "baseScale": 1.05,
+  "hitbox": {
+    "width": 3.8,
+    "height": 2.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "canWalk": true,
+        "walkSpeed": 0.18,
+        "avoidsLand": false
+      },
+      "swim": {
+        "canSwimInWater": false,
+        "swimSpeed": 0.12,
+        "canBreatheUnderwater": false
+      },
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "55-80",
+          "JUMP": "20-40",
+          "SKILL": "50-75",
+          "SPEED": "60-85",
+          "STAMINA": "55-80"
+        }
+      },
+      "AIR": {
+        "key": "cobblemon:air/bird",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "65-90",
+          "JUMP": "0-0",
+          "SKILL": "55-80",
+          "SPEED": "80-100",
+          "STAMINA": "55-80"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

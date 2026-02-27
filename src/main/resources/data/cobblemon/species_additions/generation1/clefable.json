@@ -1,0 +1,27 @@
+{
+  "target": "cobblemon:clefable",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "35-55",
+          "JUMP": "20-35",
+          "SKILL": "35-55",
+          "SPEED": "30-45",
+          "STAMINA": "55-100"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

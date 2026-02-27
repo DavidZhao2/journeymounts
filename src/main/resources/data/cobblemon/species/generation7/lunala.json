@@ -1,0 +1,276 @@
+{
+  "nationalPokedexNumber": 792,
+  "name": "Lunala",
+  "primaryType": "psychic",
+  "secondaryType": "ghost",
+  "maleRatio": -1,
+  "height": 40,
+  "weight": 1200,
+  "pokedex": [
+    "cobblemon.species.lunala.desc"
+  ],
+  "labels": [
+    "gen7",
+    "legendary",
+    "restricted"
+  ],
+  "aspects": [],
+  "abilities": [
+    "shadowshield",
+    "h:shadowshield"
+  ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 137,
+    "attack": 113,
+    "defence": 89,
+    "special_attack": 137,
+    "special_defence": 107,
+    "speed": 97
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 3,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 340,
+  "experienceGroup": "slow",
+  "catchRate": 3,
+  "eggCycles": 120,
+  "baseFriendship": 0,
+
+  "baseScale": 1.05,
+  "hitbox": {
+    "width": 3.4,
+    "height": 3.0,
+    "fixed": false
+  },
+
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:phantom_membrane",
+        "quantityRange": "3-5"
+      }
+    ]
+  },
+
+  "moves": [
+    "1:moongeistbeam",
+    "1:cosmicpower",
+    "1:hypnosis",
+    "1:teleport",
+    "1:confusion",
+    "1:splash",
+    "7:nightshade",
+    "14:confuseray",
+    "21:airslash",
+    "28:shadowball",
+    "35:moonlight",
+    "42:nightdaze",
+    "49:psychic",
+    "56:moonblast",
+    "63:phantomforce",
+    "70:dreameater",
+    "77:wideguard",
+    "tm:acrobatics",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:airslash",
+    "tm:blizzard",
+    "tm:calmmind",
+    "tm:chargebeam",
+    "tm:confuseray",
+    "tm:cosmicpower",
+    "tm:dazzlinggleam",
+    "tm:defog",
+    "tm:dreameater",
+    "tm:dualwingbeat",
+    "tm:endure",
+    "tm:expandingforce",
+    "tm:facade",
+    "tm:fly",
+    "tm:focusblast",
+    "tm:futuresight",
+    "tm:gigaimpact",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:hex",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:lightscreen",
+    "tm:magiccoat",
+    "tm:magicroom",
+    "tm:meteorbeam",
+    "tm:nightshade",
+    "tm:phantomforce",
+    "tm:poltergeist",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychocut",
+    "tm:psychup",
+    "tm:psyshock",
+    "tm:raindance",
+    "tm:reflect",
+    "tm:rest",
+    "tm:roost",
+    "tm:safeguard",
+    "tm:scaryface",
+    "tm:shadowball",
+    "tm:shadowclaw",
+    "tm:shockwave",
+    "tm:signalbeam",
+    "tm:skyattack",
+    "tm:skydrop",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:spite",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:tailwind",
+    "tm:telekinesis",
+    "tm:terablast",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:trick",
+    "tm:trickroom",
+    "tm:willowisp",
+    "tm:wonderroom",
+    "tm:workup",
+    "tutor:aerialace",
+    "tutor:calmmind",
+    "tutor:chargebeam",
+    "tutor:dazzlinggleam",
+    "tutor:defog",
+    "tutor:dualwingbeat",
+    "tutor:expandingforce",
+    "tutor:gigaimpact",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:magiccoat",
+    "tutor:magicroom",
+    "tutor:meteorbeam",
+    "tutor:poltergeist",
+    "tutor:psychic",
+    "tutor:psychocut",
+    "tutor:rest",
+    "tutor:roost",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:spite",
+    "tutor:swift",
+    "tutor:tailwind",
+    "tutor:telekinesis",
+    "tutor:thunderbolt",
+    "tutor:trick",
+    "tutor:wonderroom",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:roar",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:thunderwave",
+    "legacy:toxic"
+  ],
+
+  "preEvolution": "cosmoem",
+  "evolutions": [],
+
+  "behaviour": {
+    "herd": {
+      "maxSize": "7"
+    },
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "canWalk": true,
+        "walkSpeed": 0.18,
+        "avoidsLand": false
+      },
+      "swim": {
+        "canSwimInWater": false,
+        "swimSpeed": 0.12,
+        "canBreatheUnderwater": false
+      },
+      "fly": {
+        "canFly": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    }
+  },
+
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "speed": "Math.clamp(q.entity.velocity.horizontal_magnitude + 0.24, 0, 1)",
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "gravity": "q.gravity * (0.24 + (q.passenger_count - 1) * 0.08)",
+        "jumpVector": [
+          0,
+          "0.30*q.jump_strength/50",
+          "-1 * 0.50*q.jump_strength/50"
+        ],
+        "stats": {
+          "ACCELERATION": "45-75",
+          "JUMP": "25-45",
+          "SKILL": "35-65",
+          "SPEED": "45-75",
+          "STAMINA": "60-95"
+        }
+      },
+      "AIR": {
+        "speed": "Math.clamp(q.entity.velocity.horizontal_magnitude + 0.34, 0, 1)",
+        "key": "cobblemon:air/bird",
+        "rideSounds": [],
+        "gravity": "q.gravity * (0.08 + (q.passenger_count - 1) * 0.04)",
+        "stats": {
+          "ACCELERATION": "60-90",
+          "JUMP": "35-60",
+          "SKILL": "45-75",
+          "SPEED": "70-98",
+          "STAMINA": "70-100"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

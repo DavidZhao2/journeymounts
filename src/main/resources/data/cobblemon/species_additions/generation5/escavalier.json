@@ -1,0 +1,70 @@
+{
+  "target": "cobblemon:escavalier",
+
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "key": "cobblemon:air/hover",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "20-40",
+          "JUMP": "20-35",
+          "SKILL": "40-70",
+          "SPEED": "20-40",
+          "STAMINA": "30-60"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.1,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.4,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.45,
+              "z": -0.05
+            },
+            "poseTypes": [
+              "HOVER",
+              "FLOAT"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.5,
+              "z": -0.1
+            },
+            "poseTypes": [
+              "FLY",
+              "GLIDE"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

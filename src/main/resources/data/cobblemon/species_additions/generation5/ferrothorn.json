@@ -1,0 +1,41 @@
+{
+  "target": "cobblemon:ferrothorn",
+
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "5-20",
+          "ACCELERATION": "5-20",
+          "SKILL": "45-70",
+          "JUMP": "5-15",
+          "STAMINA": "50-80"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.15,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": -0.1
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

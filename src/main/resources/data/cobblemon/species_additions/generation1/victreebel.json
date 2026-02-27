@@ -1,0 +1,44 @@
+{
+  "target": "cobblemon:victreebel",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "20-32",
+          "ACCELERATION": "25-40",
+          "SKILL": "30-45",
+          "JUMP": "10-20",
+          "STAMINA": "55-85"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.15,
+              "z": 0.1
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK",
+              "HOVER",
+              "FLOAT",
+              "SWIM",
+              "GLIDE"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

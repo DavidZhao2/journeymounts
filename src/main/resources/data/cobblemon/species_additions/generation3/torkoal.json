@@ -1,0 +1,51 @@
+{
+  "target": "cobblemon:torkoal",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "10-25",
+          "JUMP": "10-20",
+          "SKILL": "30-55",
+          "SPEED": "10-25",
+          "STAMINA": "50-90"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.18,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.25,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.2,
+              "z": -0.05
+            },
+            "poseTypes": [
+              "FLOAT",
+              "SWIM"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

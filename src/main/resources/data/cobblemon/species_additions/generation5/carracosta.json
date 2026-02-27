@@ -1,0 +1,71 @@
+{
+  "target": "cobblemon:carracosta",
+
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "15-35",
+          "ACCELERATION": "15-35",
+          "SKILL": "30-55",
+          "JUMP": "10-25",
+          "STAMINA": "45-80"
+        }
+      },
+      "LIQUID": {
+        "key": "cobblemon:liquid/dolphin",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.water_surface",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "SPEED": "25-50",
+          "ACCELERATION": "20-40",
+          "SKILL": "40-70",
+          "JUMP": "20-35",
+          "STAMINA": "55-90"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.1,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.1,
+              "z": -0.1
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "FLOAT",
+              "SWIM"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

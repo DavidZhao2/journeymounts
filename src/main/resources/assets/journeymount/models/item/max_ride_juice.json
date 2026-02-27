@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "journeymount:item/max_ride_juice",
+    "layer1": "journeymount:item/aprijuice_pink_overlay_umbrella"
+  }
+}

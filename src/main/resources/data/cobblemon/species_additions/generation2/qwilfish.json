@@ -1,0 +1,69 @@
+{
+  "target": "cobblemon:qwilfish",
+  "riding": {
+    "behaviours": {
+      "LIQUID": {
+        "key": "cobblemon:liquid/dolphin",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.water_surface",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "30-55",
+          "JUMP": "15-35",
+          "SKILL": "25-45",
+          "SPEED": "30-55",
+          "STAMINA": "30-60"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": -0.1
+            },
+            "poseTypes": [
+              "STAND",
+              "FLOAT"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.05,
+              "y": -0.9,
+              "z": -0.25
+            },
+            "poseTypes": [
+              "SWIM"
+            ]
+          },
+          {
+            "offset": {
+              "x": -0.05,
+              "y": -1.05,
+              "z": 0.1
+            },
+            "poseTypes": [
+              "HOVER",
+              "GLIDE"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

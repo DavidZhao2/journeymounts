@@ -1,0 +1,60 @@
+{
+  "target": "cobblemon:registeel",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "10-30",
+          "JUMP": "10-25",
+          "SKILL": "35-60",
+          "SPEED": "15-30",
+          "STAMINA": "40-80"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.2,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.6,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.65,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.55,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "HOVER",
+              "FLOAT"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

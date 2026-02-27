@@ -1,0 +1,49 @@
+{
+  "target": "cobblemon:slowking",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "15-35",
+          "JUMP": "10-20",
+          "SKILL": "40-60",
+          "SPEED": "20-40",
+          "STAMINA": "55-85"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.1,
+              "z": 0.05
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -1.15,
+              "z": 0.07
+            },
+            "poseTypes": [
+              "WALK"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

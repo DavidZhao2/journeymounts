@@ -1,0 +1,41 @@
+{
+  "target": "cobblemon:druddigon",
+
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "20-45",
+          "ACCELERATION": "20-45",
+          "SKILL": "35-65",
+          "JUMP": "20-35",
+          "STAMINA": "45-75"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.15,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": -0.1
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

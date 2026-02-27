@@ -1,0 +1,41 @@
+{
+  "target": "cobblemon:amoonguss",
+
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "10-25",
+          "ACCELERATION": "10-25",
+          "SKILL": "30-55",
+          "JUMP": "10-20",
+          "STAMINA": "40-70"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.2,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.1,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

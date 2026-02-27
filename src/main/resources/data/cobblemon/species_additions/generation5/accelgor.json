@@ -1,0 +1,41 @@
+{
+  "target": "cobblemon:accelgor",
+
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "30-55",
+          "ACCELERATION": "30-60",
+          "SKILL": "40-70",
+          "JUMP": "15-30",
+          "STAMINA": "25-45"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.15,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.25,
+              "z": -0.1
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

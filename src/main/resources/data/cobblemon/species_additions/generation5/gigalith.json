@@ -1,0 +1,41 @@
+{
+  "target": "cobblemon:gigalith",
+
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "10-30",
+          "ACCELERATION": "10-30",
+          "SKILL": "35-60",
+          "JUMP": "15-30",
+          "STAMINA": "55-90"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.25,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.6,
+              "z": 0.05
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

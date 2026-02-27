@@ -1,0 +1,48 @@
+{
+  "target": "glastrier",
+  "baseScale": 1.0,
+  "hitbox": {
+    "width": 1.9,
+    "height": 2.35,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "canWalk": true,
+        "walkSpeed": 0.19,
+        "avoidsLand": false
+      },
+      "swim": {
+        "canSwimInWater": true,
+        "swimSpeed": 0.15,
+        "canBreatheUnderwater": true
+      }
+    }
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "40-60",
+          "JUMP": "35-55",
+          "SKILL": "35-55",
+          "SPEED": "40-60",
+          "STAMINA": "55-80"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

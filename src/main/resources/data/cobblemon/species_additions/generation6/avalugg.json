@@ -1,0 +1,89 @@
+{
+  "target": "cobblemon:avalugg",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "10-25",
+          "ACCELERATION": "15-30",
+          "SKILL": "40-70",
+          "JUMP": "5-15",
+          "STAMINA": "60-90"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -2.1,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.03,
+              "y": -2.2,
+              "z": -0.15
+            },
+            "poseTypes": [
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -1.9,
+              "z": -0.25
+            },
+            "poseTypes": [
+              "HOVER"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -1.9,
+              "z": -0.25
+            },
+            "poseTypes": [
+              "GLIDE"
+            ]
+          },
+          {
+            "offset": {
+              "x": -0.03,
+              "y": -1.85,
+              "z": -0.3
+            },
+            "poseTypes": [
+              "FLOAT"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -1.95,
+              "z": -0.2
+            },
+            "poseTypes": [
+              "SWIM"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "cobblemon:cooking_pot_shapeless",
+  "group": "aprijuice",
+  "category": "complex_dishes",
+  "ingredients": [
+    { "item": "cobblemon:energy_root" },
+    { "item": "cobblemon:pep_up_flower" },
+    { "item": "cobblemon:vivichoke" },
+    { "item": "cobblemon:white_apricorn" },
+    { "item": "cobblemon:red_apricorn" },
+    { "item": "cobblemon:blue_apricorn" },
+    { "item": "cobblemon:yellow_apricorn" },
+    { "item": "cobblemon:green_apricorn" },
+    { "item": "cobblemon:pink_apricorn" }
+  ],
+  "result": {
+    "id": "journeymount:max_ride_juice"
+  },
+  "seasoningTag": "cobblemon:recipe_filters/flavour_seasoning",
+  "seasoningProcessors": [
+    "ride_boosts"
+  ]
+}

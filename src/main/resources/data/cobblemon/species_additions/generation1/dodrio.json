@@ -1,0 +1,27 @@
+{
+  "target": "cobblemon:dodrio",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "55-95",
+          "ACCELERATION": "60-85",
+          "SKILL": "35-75",
+          "JUMP": "25-45",
+          "STAMINA": "50-100"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

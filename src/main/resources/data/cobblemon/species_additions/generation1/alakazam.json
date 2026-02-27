@@ -1,0 +1,27 @@
+{
+  "target": "cobblemon:alakazam",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "40-65",
+          "ACCELERATION": "65-85",
+          "SKILL": "65-95",
+          "JUMP": "15-35",
+          "STAMINA": "45-100"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

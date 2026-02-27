@@ -1,0 +1,71 @@
+{
+  "target": "cobblemon:scizor",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "55-75",
+          "JUMP": "15-30",
+          "SKILL": "45-70",
+          "SPEED": "40-65",
+          "STAMINA": "30-50"
+        }
+      },
+      "AIR": {
+        "key": "cobblemon:air/bird",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "40-60",
+          "JUMP": "25-45",
+          "SKILL": "50-75",
+          "SPEED": "35-55",
+          "STAMINA": "25-45"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.1,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.05,
+              "y": -1.0,
+              "z": -0.15
+            },
+            "poseTypes": [
+              "HOVER",
+              "FLY",
+              "GLIDE"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "target": "zacian",
+  "baseScale": 1.0,
+  "hitbox": {
+    "width": 2.0,
+    "height": 2.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "canWalk": true,
+        "walkSpeed": 0.30,
+        "avoidsLand": false
+      },
+      "swim": {
+        "canSwimInWater": true,
+        "swimSpeed": 0.18,
+        "canBreatheUnderwater": true
+      }
+    }
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "65-90",
+          "JUMP": "35-55",
+          "SKILL": "45-70",
+          "SPEED": "75-95",
+          "STAMINA": "45-65"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

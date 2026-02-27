@@ -1,0 +1,70 @@
+{
+  "target": "miraidon",
+  "baseScale": 1.05,
+  "hitbox": {
+    "width": 2.2,
+    "height": 2.0,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "canWalk": true,
+        "walkSpeed": 0.22,
+        "avoidsLand": false
+      },
+      "swim": {
+        "canSwimInWater": true,
+        "swimSpeed": 0.20,
+        "canBreatheUnderwater": true
+      },
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "70-95",
+          "JUMP": "40-65",
+          "SKILL": "45-70",
+          "SPEED": "75-100",
+          "STAMINA": "60-90"
+        }
+      },
+      "AIR": {
+        "key": "cobblemon:air/bird",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "55-75",
+          "JUMP": "25-50",
+          "SKILL": "45-70",
+          "SPEED": "45-60",
+          "STAMINA": "30-55"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

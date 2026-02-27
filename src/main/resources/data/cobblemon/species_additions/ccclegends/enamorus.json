@@ -1,0 +1,62 @@
+{
+  "target": "enamorus",
+  "baseScale": 1.0,
+  "hitbox": {
+    "width": 1.55,
+    "height": 2.05,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "canWalk": true,
+        "walkSpeed": 0.18,
+        "avoidsLand": false
+      },
+      "swim": {
+        "canSwimInWater": true,
+        "swimSpeed": 0.16,
+        "canBreatheUnderwater": true
+      },
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "45-70",
+          "JUMP": "30-55",
+          "SKILL": "40-70",
+          "SPEED": "55-85",
+          "STAMINA": "55-80"
+        }
+      },
+      "AIR": {
+        "key": "cobblemon:air/bird",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "55-80",
+          "JUMP": "0-0",
+          "SKILL": "45-70",
+          "SPEED": "70-95",
+          "STAMINA": "50-75"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

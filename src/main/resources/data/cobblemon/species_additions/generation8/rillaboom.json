@@ -1,0 +1,90 @@
+{
+  "target": "cobblemon:rillaboom",
+
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "30-55",
+          "JUMP": "20-35",
+          "SKILL": "40-65",
+          "SPEED": "30-50",
+          "STAMINA": "55-85"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -2.05,
+              "z": 0.1
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.06,
+              "y": -2.15,
+              "z": -0.15
+            },
+            "poseTypes": [
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.03,
+              "y": -1.7,
+              "z": -0.25
+            },
+            "poseTypes": [
+              "HOVER"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.03,
+              "y": -1.7,
+              "z": -0.25
+            },
+            "poseTypes": [
+              "GLIDE"
+            ]
+          },
+          {
+            "offset": {
+              "x": -0.03,
+              "y": -1.6,
+              "z": -0.3
+            },
+            "poseTypes": [
+              "FLOAT"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.04,
+              "y": -1.85,
+              "z": -0.2
+            },
+            "poseTypes": [
+              "SWIM"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

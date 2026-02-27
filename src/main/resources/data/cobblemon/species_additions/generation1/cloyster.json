@@ -1,0 +1,39 @@
+{
+  "target": "cobblemon:cloyster",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "30-50",
+          "JUMP": "5-20",
+          "SKILL": "10-35",
+          "SPEED": "30-45",
+          "STAMINA": "15-50"
+        }
+      },
+      "LIQUID": {
+        "key": "cobblemon:liquid/submarine",
+        "hitboxBreachPercentage": 0.75,
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "45-65",
+          "JUMP": "30-50",
+          "SKILL": "50-85",
+          "SPEED": "35-65",
+          "STAMINA": "35-100"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

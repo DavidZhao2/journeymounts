@@ -1,0 +1,27 @@
+{
+  "target": "cobblemon:arbok",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "65-80",
+          "JUMP": "10-35",
+          "SKILL": "15-40",
+          "SPEED": "25-55",
+          "STAMINA": "35-100"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

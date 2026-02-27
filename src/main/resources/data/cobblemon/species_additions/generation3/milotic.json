@@ -1,0 +1,59 @@
+{
+  "target": "cobblemon:milotic",
+  "riding": {
+    "behaviours": {
+      "LIQUID": {
+        "key": "cobblemon:liquid/dolphin",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.water_surface",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "35-65",
+          "JUMP": "25-45",
+          "SKILL": "55-80",
+          "SPEED": "40-70",
+          "STAMINA": "45-85"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.15,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.55,
+              "z": 0.0
+            },
+            "poseTypes": [
+              "STAND",
+              "FLOAT"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.6,
+              "z": -0.15
+            },
+            "poseTypes": [
+              "SWIM",
+              "HOVER"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

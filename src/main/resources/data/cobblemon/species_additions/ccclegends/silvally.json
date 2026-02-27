@@ -1,0 +1,48 @@
+{
+  "target": "silvally",
+  "baseScale": 1.0,
+  "hitbox": {
+    "width": 1.9,
+    "height": 2.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "canWalk": true,
+        "walkSpeed": 0.22,
+        "avoidsLand": false
+      },
+      "swim": {
+        "canSwimInWater": false,
+        "swimSpeed": 0.12,
+        "canBreatheUnderwater": false
+      }
+    }
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "45-70",
+          "JUMP": "30-55",
+          "SKILL": "35-65",
+          "SPEED": "45-75",
+          "STAMINA": "60-90"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

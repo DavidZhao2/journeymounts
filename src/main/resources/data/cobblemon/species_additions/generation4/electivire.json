@@ -1,0 +1,40 @@
+{
+  "target": "cobblemon:electivire",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "30-60",
+          "ACCELERATION": "30-55",
+          "SKILL": "40-70",
+          "JUMP": "25-40",
+          "STAMINA": "40-75"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.18,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 0.05
+            },
+            "poseTypes": [
+              "STAND",
+              "WALK"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

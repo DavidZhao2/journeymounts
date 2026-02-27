@@ -1,0 +1,65 @@
+{
+  "implemented": true,
+  "target": "fezandipiti",
+  "baseScale": 0.95,
+  "hitbox": {
+    "width": 1.35,
+    "height": 1.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "canWalk": true,
+        "walkSpeed": 0.19,
+        "avoidsLand": false
+      },
+      "swim": {
+        "canSwimInWater": true,
+        "swimSpeed": 0.16,
+        "canBreatheUnderwater": false
+      },
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "45-70",
+          "JUMP": "20-40",
+          "SKILL": "45-75",
+          "SPEED": "65-92",
+          "STAMINA": "40-65"
+        }
+      },
+      "AIR": {
+        "key": "cobblemon:air/bird",
+        "rideSounds": [],
+        "speed": "Math.clamp(q.entity.velocity.horizontal_magnitude + 0.31, 0, 1)",
+        "gravity": "q.gravity * (0.11 + (q.passenger_count - 1) * 0.04)",
+        "stats": {
+          "ACCELERATION": "60-85",
+          "JUMP": "0-0",
+          "SKILL": "55-80",
+          "SPEED": "70-95",
+          "STAMINA": "55-80"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

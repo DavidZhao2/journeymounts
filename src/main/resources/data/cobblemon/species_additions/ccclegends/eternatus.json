@@ -1,0 +1,71 @@
+{
+  "implemented": true,
+  "target": "eternatus",
+  "baseScale": 1.0,
+  "hitbox": {
+    "width": 3.2,
+    "height": 4.0,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "canWalk": true,
+        "walkSpeed": 0.16,
+        "avoidsLand": false
+      },
+      "swim": {
+        "canSwimInWater": true,
+        "swimSpeed": 0.16,
+        "canBreatheUnderwater": true
+      },
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "stats": {
+          "ACCELERATION": "55-80",
+          "JUMP": "10-25",
+          "SKILL": "45-70",
+          "SPEED": "55-80",
+          "STAMINA": "55-75"
+        }
+      },
+      "AIR": {
+        "key": "cobblemon:air/bird",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "70-95",
+          "JUMP": "0-0",
+          "SKILL": "55-80",
+          "SPEED": "80-100",
+          "STAMINA": "55-75"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.8,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.2,
+              "z": 0.0
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

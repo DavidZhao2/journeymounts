@@ -1,0 +1,62 @@
+{
+  "target": "kyurem",
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 3.5,
+    "height": 3.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "canWalk": true,
+        "walkSpeed": 0.18,
+        "avoidsLand": false
+      },
+      "swim": {
+        "canSwimInWater": true,
+        "swimSpeed": 0.16,
+        "canBreatheUnderwater": true
+      },
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "key": "cobblemon:air/bird",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "45-65",
+          "JUMP": "35-55",
+          "SKILL": "80-110",
+          "SPEED": "45-65",
+          "STAMINA": "90-130"
+        }
+      },
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "35-60",
+          "JUMP": "30-65",
+          "SKILL": "25-55",
+          "SPEED": "25-45",
+          "STAMINA": "50-90"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "target": "cobblemon:goodra",
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "SPEED": "20-40",
+          "ACCELERATION": "30-55",
+          "SKILL": "40-70",
+          "JUMP": "15-30",
+          "STAMINA": "45-75"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -2.15,
+              "z": 0.05
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.04,
+              "y": -2.25,
+              "z": -0.1
+            },
+            "poseTypes": [
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.03,
+              "y": -1.85,
+              "z": -0.25
+            },
+            "poseTypes": [
+              "HOVER"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.03,
+              "y": -1.85,
+              "z": -0.25
+            },
+            "poseTypes": [
+              "GLIDE"
+            ]
+          },
+          {
+            "offset": {
+              "x": -0.03,
+              "y": -1.75,
+              "z": -0.3
+            },
+            "poseTypes": [
+              "FLOAT"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.02,
+              "y": -1.8,
+              "z": -0.2
+            },
+            "poseTypes": [
+              "SWIM"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

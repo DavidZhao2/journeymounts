@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "journeymount:item/vital_aprijuice",
+    "layer1": "journeymount:item/aprijuice_black_overlay_umbrella"
+  }
+}

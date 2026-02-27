@@ -1,0 +1,62 @@
+{
+  "target": "cobblemon:buzzwole",
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "depth": "normal",
+      "light": "0-4"
+    },
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "walkSpeed": 0.175,
+        "canWalk": true,
+        "avoidsLand": false
+      },
+      "swim": {
+        "swimSpeed": 0.1,
+        "canSwimInWater": false,
+        "canBreatheUnderwater": false
+      }
+    }
+  },
+  "baseScale": 1.0,
+  "hitbox": {
+    "width": 1.8,
+    "height": 3.0,
+    "fixed": false
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "30-45",
+          "JUMP": "20-35",
+          "SKILL": "30-45",
+          "SPEED": "30-45",
+          "STAMINA": "60-85"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 2.1,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.4,
+              "z": 0.0
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

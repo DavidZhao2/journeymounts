@@ -62,7 +62,6 @@ This mod has surpassed 2 million downloads across releases.
 
 David Zhao  
 Computer Science, San Francisco State University  
-Minecraft Mod Developer
 
 ---
 

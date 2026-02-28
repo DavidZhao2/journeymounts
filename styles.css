@@ -302,6 +302,27 @@ button.good{
   color: var(--text);
 }
 
+/* Ride stats controls (search + filter) - match site theme */
+.rideControls{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  margin: 10px 0 14px;
+  flex-wrap:wrap;
+}
+.rideControls input,
+.rideControls select{
+  padding:9px 10px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background: rgba(255,255,255,.02);
+  color: var(--text);
+  outline: none;
+}
+.rideControls input{ min-width:160px; }
+.rideControls select{ min-width:140px; }
+.rideControls .muted.small{ color: var(--muted); font-size:12px; }
+
 /* --- Ride page layout (extended + nice) --- */
 .rideLayout{
   display:grid;

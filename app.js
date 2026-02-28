@@ -373,6 +373,10 @@ function renderPage(){
   $("page").innerHTML = found ? found.render() : `<h1>404</h1><p>Page not found.</p>`;
   setCrumb(found ? found.title : "Home");
   setActiveNav(route);
+  if (route === 'ride-stats') {
+    wireRideStatsControls();
+    updateRideStatsDisplay();
+  }
 }
 
 // ---------- Ride Stats ----------
@@ -403,6 +407,19 @@ function renderRideStatsPage(){
   return `
     <h1>Ride Stats</h1>
     <p class="muted">All Ride Stats for Version 1.8</p>
+    <!-- Controls -->
+    <div class="rideControls" style="margin-bottom:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+      <input id="rideSearchInput" placeholder="Search Pokémon" style="padding:6px;min-width:160px;" />
+      <select id="rideFilterSelect" style="padding:6px;">
+        <option value="ALL">All / Unsorted</option>
+        <option value="FASTEST">Fastest</option>
+        <option value="SLOWEST">Slowest</option>
+        <option value="AIR">Has AIR</option>
+        <option value="WATER">Has WATER</option>
+        <option value="LAND">Has LAND</option>
+      </select>
+      <div class="muted small">Tip: type to search, then choose a filter.</div>
+    </div>
 
     <!-- Desktop table -->
     <div class="tableWrap rideWrap">
@@ -415,7 +432,7 @@ function renderRideStatsPage(){
             <th>WATER</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="rideTableBody">
           ${FAKE_RIDE_DATA.map((p) => `
             <tr>
               <td class="pokeCell">
@@ -469,6 +486,111 @@ function renderRideStatsPage(){
         Faction_Void was here
     </p>
   `;
+}
+
+// ---------- Ride stats helpers (search / filter / sort) ----------
+function parseStatRange(val){
+  if (!val) return 0;
+  try {
+    const parts = String(val).split("-").map(s => s.trim());
+    const last = parts[parts.length-1];
+    const n = Number(last.replace(/[^0-9.]/g, ''));
+    return Number.isFinite(n) ? n : 0;
+  } catch (e){ return 0; }
+}
+
+function getRideScoreForSort(p){
+  let best = 0;
+  for (const m of Object.values(p.modes||{})){
+    best = Math.max(best, parseStatRange(m.speed));
+  }
+  return best;
+}
+
+function getFilteredRides(){
+  const qEl = document.getElementById('rideSearchInput');
+  const sel = document.getElementById('rideFilterSelect');
+  const q = qEl ? qEl.value.trim().toLowerCase() : '';
+  const filter = sel ? sel.value : 'ALL';
+
+  let list = FAKE_RIDE_DATA.slice();
+
+  if (q) list = list.filter(p => p.name.toLowerCase().includes(q));
+
+  if (filter === 'AIR' || filter === 'WATER' || filter === 'LAND'){
+    list = list.filter(p => Object.keys(p.modes||{}).includes(filter));
+  }
+
+  if (filter === 'FASTEST'){
+    list.sort((a,b) => getRideScoreForSort(b) - getRideScoreForSort(a));
+  } else if (filter === 'SLOWEST'){
+    list.sort((a,b) => getRideScoreForSort(a) - getRideScoreForSort(b));
+  }
+
+  return list;
+}
+
+function updateRideStatsDisplay(){
+  const tableBody = document.getElementById('rideTableBody');
+  const cardsWrap = document.getElementById('rideCards');
+  if (!tableBody || !cardsWrap) return;
+
+  const list = getFilteredRides();
+
+  tableBody.innerHTML = list.map((p) => `
+    <tr>
+      <td class="pokeCell">
+        <strong>${escapeHtml(p.name)}</strong>
+        <div class="muted small">${escapeHtml(p.target)}</div>
+        <div class="modelLine">
+          <span class="modelTag">Model</span>
+          <span class="muted small">${escapeHtml(p.modelFrom)}</span>
+        </div>
+
+        <div class="modelLine">
+          <span class="modelTag">Ride Style</span>
+          <span class="muted small">${escapeHtml(p.rideStyle || "—")}</span>
+        </div>
+      </td>
+      <td>${renderModeCell("LAND", p.modes.LAND)}</td>
+      <td>${renderModeCell("AIR", p.modes.AIR)}</td>
+      <td>${renderModeCell("WATER", p.modes.WATER)}</td>
+    </tr>
+  `).join("");
+
+  cardsWrap.innerHTML = list.map((p) => `
+    <div class="rideCard">
+      <div class="rideCardTop">
+        <div>
+          <div class="rideCardName">${escapeHtml(p.name)}</div>
+          <div class="muted small">${escapeHtml(p.target)}</div>
+          <div class="modelLine">
+            <span class="modelTag">Model</span>
+            <span class="muted small">${escapeHtml(p.modelFrom)}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rideModes">
+        ${renderModeCell("LAND", p.modes.LAND)}
+        ${renderModeCell("AIR", p.modes.AIR)}
+        ${renderModeCell("WATER", p.modes.WATER)}
+      </div>
+    </div>
+  `).join("");
+}
+
+function wireRideStatsControls(){
+  const qEl = document.getElementById('rideSearchInput');
+  const sel = document.getElementById('rideFilterSelect');
+  if (qEl){
+    qEl.removeEventListener('input', updateRideStatsDisplay);
+    qEl.addEventListener('input', updateRideStatsDisplay);
+  }
+  if (sel){
+    sel.removeEventListener('change', updateRideStatsDisplay);
+    sel.addEventListener('change', updateRideStatsDisplay);
+  }
 }
 
 // ---------- Mobile menu ----------

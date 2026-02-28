@@ -1,3 +1,56 @@
+/* Mount List redesign */
+.mountGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-top: 18px;
+}
+.mountCard {
+  background: var(--panel);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+  padding: 18px 16px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s;
+}
+.mountCard:hover {
+  box-shadow: 0 4px 16px 0 rgba(124,92,255,0.10);
+  border-color: var(--accent);
+}
+.mountCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.mountName {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.mountModes {
+  display: flex;
+  gap: 6px;
+}
+.mountMode {
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.85em;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+.mountModel, .mountRideStyle {
+  font-size: 0.97em;
+  color: var(--muted);
+}
+.mountModel span, .mountRideStyle span {
+  color: var(--text);
+  font-weight: 500;
+}
 :root{
   --bg:#0b0c10;
   --panel:#12141b;

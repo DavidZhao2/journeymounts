@@ -2181,7 +2181,7 @@ const PAGES = [
         badge: "",
         render: () => `
           <h1>CJM Wiki</h1>
-          <p class="muted">Simple wiki site for your mod (HTML/CSS/JS only).</p>
+          <p class="muted">Cobblemon Journey Mount Wiki Page</p>
 
           <h2>Quick Links</h2>
           <ul>
@@ -2215,20 +2215,24 @@ const PAGES = [
         id: "mount-list",
         title: "Mount List",
         badge: "WIP",
-        render: () => `
-          <h1>Mount List</h1>
-          <p>Example list (replace with your real supported Pokémon list):</p>
-          <ul>
-            ${FAKE_RIDE_DATA.map(p => {
-              const modes = Object.keys(p.modes).join(", ");
-              return `<li>
-                <strong>${escapeHtml(p.name)}</strong>
-                <span class="muted small">(${escapeHtml(modes)})</span>
-                <div class="muted tiny">Model: ${escapeHtml(p.modelFrom)}</div>
-              </li>`;
-            }).join("")}
-          </ul>
-        `
+          render: () => `
+            <h1>Mount List</h1>
+            <div class="mountGrid">
+              ${FAKE_RIDE_DATA.map(p => {
+                const modes = Object.keys(p.modes).map(m => `<span class="mountMode">${escapeHtml(m)}</span>`).join("");
+                return `
+                  <div class="mountCard">
+                    <div class="mountCardHeader">
+                      <span class="mountName">${escapeHtml(p.name)}</span>
+                      <span class="mountModes">${modes}</span>
+                    </div>
+                    <div class="mountModel">Model: <span>${escapeHtml(p.modelFrom)}</span></div>
+                    <div class="mountRideStyle">Ride Style: <span>${escapeHtml(p.rideStyle || "—")}</span></div>
+                  </div>
+                `;
+              }).join("")}
+            </div>
+          `
       }
     ]
   },

@@ -2196,25 +2196,9 @@ const PAGES = [
         id: "install",
         title: "Install",
         badge: "",
-        render: () => `
-          <h1>Install</h1>
-          <p>Put your real install steps here.</p>
-
-          <h2>Requirements (example)</h2>
-          <ul>
-            <li>Minecraft: <code>1.21.1</code></li>
-            <li>Loader: <code>Fabric</code> (and/or NeoForge)</li>
-            <li>Cobblemon: <code>(your version)</code></li>
-          </ul>
-
-          <h2>Steps</h2>
-          <ol>
-            <li>Install Fabric Loader</li>
-            <li>Install Cobblemon</li>
-            <li>Drop CJM in <code>mods/</code></li>
-            <li>(Optional) Enable CJM resource pack</li>
-          </ol>
-        `
+          render: () => `
+            <h1>Install</h1>
+          `
       }
     ]
   },
@@ -2254,16 +2238,10 @@ const PAGES = [
       {
         id: "faq",
         title: "FAQ",
-        badge: "",
-        render: () => `
-          <h1>FAQ</h1>
-
-          <h2>Pokémon are invisible on multiplayer</h2>
-          <p>Common causes: resource pack mismatch, wrong load order, or client/server version mismatch.</p>
-
-          <h2>Mounting works but syncing is weird</h2>
-          <p>Can happen if the mount controller / model transforms are out of sync. Document your fix steps here.</p>
-        `
+          badge: "WIP",
+          render: () => `
+            <h1>FAQ</h1>
+          `
       }
     ]
   }

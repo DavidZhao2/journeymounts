@@ -315,13 +315,37 @@ button.good{
   padding:9px 10px;
   border-radius:12px;
   border:1px solid var(--border);
-  background: rgba(255,255,255,.02);
+  /* use a solid dark panel color instead of a slightly-transparent white
+     to avoid platform-specific quirks where the native select element
+     forces a white background on desktop builds.  On Windows the UA
+     stylesheet often paints the dropdown as white which, combined with
+     our light text color, made the selected value nearly invisible.  On
+     mobile and macOS the native controls respect the transparent background
+     so the issue wasn't visible there. */
+  background: var(--panel);
   color: var(--text);
   outline: none;
 }
 .rideControls input{ min-width:160px; }
 .rideControls select{ min-width:140px; }
 .rideControls .muted.small{ color: var(--muted); font-size:12px; }
+
+/* ensure menu options themselves are also styled for contrast; some
+   browsers/platforms ignore colors for the <select> element when the
+   dropdown is open, so we target <option> directly. */
+.rideControls select option,
+.detailControls select option {
+  background: var(--panel);
+  color: var(--text);
+}
+
+/* hovered/focused options should be distinguishable as well */
+.rideControls select option:hover,
+.rideControls select option:focus,
+.detailControls select option:hover,
+.detailControls select option:focus {
+  background: var(--panel2);
+}
 
 /* Custom checkbox styling */
 .rideFilterCheckbox {

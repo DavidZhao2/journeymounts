@@ -2325,7 +2325,7 @@ function buildNav(filterText=""){
     }
   }
 
-  setStatus(q ? "Filtering sidebar…" : "Ready");
+  setStatus(q ? "Filtering sidebar…" : "(˶˃ ᵕ ˂˶)");
   setActiveNav(getRoute());
 }
 

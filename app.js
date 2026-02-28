@@ -2353,13 +2353,16 @@ function renderPage(){
   const pages = getAllPagesFlat();
   const found = pages.find(p => p.id === route) || pages.find(p => p.id === "home");
 
-  $("page").innerHTML = found ? found.render() : `<h1>404</h1><p>Page not found.</p>`;
-  setCrumb(found ? found.title : "Home");
-  setActiveNav(route);
-  if (route === 'ride-stats') {
-    wireRideStatsControls();
-    updateRideStatsDisplay();
-  }
+  // Schedule DOM update for next frame for smoother navigation
+  requestAnimationFrame(() => {
+    $("page").innerHTML = found ? found.render() : `<h1>404</h1><p>Page not found.</p>`;
+    setCrumb(found ? found.title : "Home");
+    setActiveNav(route);
+    if (route === 'ride-stats') {
+      wireRideStatsControls();
+      updateRideStatsDisplay();
+    }
+  });
 }
 
 // ---------- Ride Stats ----------

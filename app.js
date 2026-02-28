@@ -186,6 +186,135 @@ const FAKE_RIDE_DATA = [
     LAND: { accel: "20-40", jump: "10-25", skill: "20-40", speed: "25-45", stamina: "70-95" }
   }
   },
+  {
+  name: "Nidoking",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "65-75", jump: "30-50", skill: "40-70", speed: "40-55", stamina: "30-45" }
+  }
+  },
+  {
+  name: "Nidoqueen",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "50-70", jump: "30-40", skill: "30-60", speed: "30-40", stamina: "70-100" }
+  }
+  },
+  {
+  name: "Ninetales",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "65-85", jump: "40-60", skill: "40-75", speed: "45-70", stamina: "30-60" }
+  }
+  },
+  {
+  name: "Persian",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "60-80", jump: "35-55", skill: "70-90", speed: "60-80", stamina: "40-60" }
+  }
+  },
+  {
+  name: "Pidgeot",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse & Bird",
+  modes: {
+    LAND: { accel: "55-65", jump: "15-25", skill: "10-25", speed: "25-40", stamina: "20-30" },
+    AIR:  { accel: "45-75", jump: "30-65", skill: "55-85", speed: "30-65", stamina: "30-65" }
+  }
+  },
+  {
+  name: "Poliwrath",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "35-55", jump: "35-55", skill: "50-70", speed: "30-50", stamina: "80-100" }
+  }
+  },
+  {
+  name: "Primeape",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "65-85", jump: "35-55", skill: "60-80", speed: "55-75", stamina: "45-65" }
+  }
+  },
+  {
+  name: "Slowbro",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-35", jump: "10-20", skill: "20-35", speed: "18-30", stamina: "65-95" }
+  }
+  },
+  {
+  name: "Snorlax",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "0-20", jump: "10-25", skill: "0-25", speed: "15-35", stamina: "70-100" }
+  }
+  },
+  {
+  name: "Tentacruel",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse & Submarine",
+  modes: {
+    LAND:  { accel: "5-20", jump: "0-5", skill: "20-40", speed: "5-20", stamina: "30-60" },
+    WATER: { accel: "40-65", jump: "25-55", skill: "45-75", speed: "30-60", stamina: "40-80" }
+  }
+  },
+  {
+  name: "Vaporeon",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse & Submarine",
+  modes: {
+    LAND:  { accel: "25-50", jump: "20-35", skill: "35-60", speed: "20-45", stamina: "30-60" },
+    WATER: { accel: "30-55", jump: "20-40", skill: "40-70", speed: "30-60", stamina: "35-65" }
+  }
+  },
+  {
+  name: "Victreebel",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "25-40", jump: "10-20", skill: "30-45", speed: "20-32", stamina: "55-85" }
+  }
+  },
+  {
+  name: "Vileplume",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "45-70", jump: "30-45", skill: "30-55", speed: "30-50", stamina: "45-75" }
+  }
+  },
+  {
+  name: "Wigglytuff",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "0-15", jump: "40-60", skill: "0-5", speed: "10-25", stamina: "20-40" }
+  }
+  },
 ];
 
 const PAGES = [

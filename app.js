@@ -1,4 +1,4 @@
-const $ = (id) => document.getElementById(id);
+  const $ = (id) => document.getElementById(id);
 const FAKE_RIDE_DATA = [
   {
     name: "Alakazam",
@@ -2389,7 +2389,7 @@ function renderModeCell(mode, modeStats){
 function renderRideStatsPage(){
   return `
     <h1>Ride Stats</h1>
-    <p class="muted">All Ride Stats for Version 1.8</p>
+    <p class="muted">All Ride Stats for Version 1.7.2</p>
     <!-- Controls -->
     <div class="rideControls" style="margin-bottom:20px;">
       <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">

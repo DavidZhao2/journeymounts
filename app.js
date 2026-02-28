@@ -1683,6 +1683,492 @@ const FAKE_RIDE_DATA = [
     LAND: { accel: "20-40", jump: "5-15", skill: "25-45", speed: "15-30", stamina: "55-85" }
   }
   },
+  {
+  name: "Arctozolt",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "30-55", jump: "15-30", skill: "30-55", speed: "30-50", stamina: "45-75" }
+  }
+  },
+  {
+  name: "Boltund",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "55-80", jump: "30-50", skill: "35-55", speed: "60-85", stamina: "35-55" }
+  }
+  },
+  {
+  name: "Centiskorch",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "35-60", jump: "20-35", skill: "35-60", speed: "35-65", stamina: "50-85" }
+  }
+  },
+  {
+  name: "Cinderace",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "55-85", jump: "30-50", skill: "45-70", speed: "55-85", stamina: "35-55" }
+  }
+  },
+  {
+  name: "Copperajah",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-35", jump: "5-15", skill: "25-45", speed: "15-30", stamina: "70-100" }
+  }
+  },
+  {
+  name: "Dracovish",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse & Boat",
+  modes: {
+    LAND:  { accel: "25-45", jump: "10-25", skill: "30-55", speed: "25-45", stamina: "45-75" },
+    WATER: { accel: "35-60", jump: "30-55", skill: "40-70", speed: "40-65", stamina: "50-85" }
+  }
+  },
+  {
+  name: "Dracozolt",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "35-60", jump: "20-35", skill: "30-55", speed: "35-55", stamina: "40-70" }
+  }
+  },
+  {
+  name: "Drednaw",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse & Dolphin",
+  modes: {
+    LAND:  { accel: "35-60", jump: "20-40", skill: "30-50", speed: "30-55", stamina: "45-80" },
+    WATER: { accel: "35-55", jump: "20-35", skill: "35-60", speed: "40-65", stamina: "45-80" }
+  }
+  },
+  {
+  name: "Dubwool",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "40-65", jump: "25-45", skill: "30-55", speed: "45-70", stamina: "40-70" }
+  }
+  },
+  {
+  name: "Eiscue",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse & Boat",
+  modes: {
+    LAND:  { accel: "20-40", jump: "10-20", skill: "25-45", speed: "20-35", stamina: "30-55" },
+    WATER: { accel: "30-50", jump: "20-35", skill: "30-55", speed: "35-55", stamina: "35-65" }
+  }
+  },
+  {
+  name: "Grapploct",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Dolphin",
+  modes: {
+    WATER: { accel: "40-65", jump: "15-35", skill: "55-85", speed: "35-60", stamina: "50-80" }
+  }
+  },
+  {
+  name: "Grimmsnarl",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "35-60", jump: "20-40", skill: "40-70", speed: "25-45", stamina: "40-75" }
+  }
+  },
+  {
+  name: "Hatterene",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-40", jump: "10-25", skill: "45-75", speed: "25-45", stamina: "30-55" }
+  }
+  },
+  {
+  name: "Inteleon",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse & Dolphin",
+  modes: {
+    LAND:  { accel: "45-70", jump: "25-45", skill: "45-75", speed: "55-80", stamina: "25-45" },
+    WATER: { accel: "40-65", jump: "35-55", skill: "45-75", speed: "45-70", stamina: "30-55" }
+  }
+  },
+  {
+  name: "Mrrime",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-40", jump: "15-30", skill: "35-60", speed: "25-40", stamina: "30-55" }
+  }
+  },
+  {
+  name: "Obstagoon",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "40-65", jump: "20-40", skill: "40-70", speed: "30-55", stamina: "40-75" }
+  }
+  },
+  {
+  name: "Regidrago",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "25-45", jump: "25-45", skill: "35-60", speed: "35-55", stamina: "45-80" }
+  }
+  },
+  {
+  name: "Regieleki",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse & Boat & Jet",
+  modes: {
+    LAND:  { accel: "65-75", jump: "30-50", skill: "40-70", speed: "40-55", stamina: "30-45" },
+    WATER: { accel: "75-85", jump: "40-80", skill: "10-25", speed: "35-60", stamina: "5-10" },
+    AIR:   { accel: "50-70", jump: "20-70", skill: "50-60", speed: "70-80", stamina: "30-50" }
+  }
+  },
+  {
+  name: "Rillaboom",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "30-55", jump: "20-35", skill: "40-65", speed: "30-50", stamina: "55-85" }
+  }
+  },
+  {
+  name: "Sandaconda",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "15-35", jump: "5-20", skill: "30-55", speed: "20-40", stamina: "55-85" }
+  }
+  },
+  {
+  name: "Stonjourner",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-35", jump: "5-15", skill: "20-40", speed: "15-30", stamina: "60-90" }
+  }
+  },
+  {
+  name: "Thievul",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "35-55", jump: "20-35", skill: "45-70", speed: "40-60", stamina: "30-55" }
+  }
+  },
+  {
+  name: "Zarude",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "55-80", jump: "30-50", skill: "45-65", speed: "60-85", stamina: "40-65" }
+  }
+  },
+  {
+  name: "Basculegion",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Dolphin",
+  modes: {
+    WATER: { accel: "40-65", jump: "25-45", skill: "35-60", speed: "45-75", stamina: "30-65" }
+  }
+  },
+  {
+  name: "Overqwil",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Dolphin",
+  modes: {
+    WATER: { accel: "30-50", jump: "15-35", skill: "40-70", speed: "35-60", stamina: "45-80" }
+  }
+  },
+  {
+  name: "Annihilape",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "40-65", jump: "25-40", skill: "45-75", speed: "45-70", stamina: "50-85" }
+  }
+  },
+  {
+  name: "Armarouge",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "40-65", jump: "20-35", skill: "50-80", speed: "35-55", stamina: "35-60" }
+  }
+  },
+  {
+  name: "Bellibolt",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Jet & Horse",
+  modes: {
+    AIR:  { accel: "45-75", jump: "45-80", skill: "50-80", speed: "55-90", stamina: "35-65" },
+    LAND: { accel: "30-55", jump: "20-40", skill: "35-60", speed: "20-40", stamina: "25-50" }
+  }
+  },
+  {
+  name: "Ceruledge",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "45-70", jump: "25-40", skill: "60-85", speed: "35-60", stamina: "30-55" }
+  }
+  },
+  {
+  name: "Cetitan",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-45", jump: "10-25", skill: "30-55", speed: "20-40", stamina: "45-80" }
+  }
+  },
+  {
+  name: "Clodsire",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "10-25", jump: "0-10", skill: "20-40", speed: "5-20", stamina: "60-90" }
+  }
+  },
+  {
+  name: "Garganacl",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "10-25", jump: "10-20", skill: "30-55", speed: "10-30", stamina: "55-85" }
+  }
+  },
+  {
+  name: "Ironleaves",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "55-80", jump: "25-45", skill: "45-70", speed: "55-85", stamina: "35-60" }
+  }
+  },
+  {
+  name: "Klawf",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-35", jump: "10-25", skill: "35-55", speed: "20-40", stamina: "45-75" }
+  }
+  },
+  {
+  name: "Mabosstiff",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "35-55", jump: "20-35", skill: "30-50", speed: "35-60", stamina: "40-70" }
+  }
+  },
+  {
+  name: "Meowscarada",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "55-80", jump: "35-60", skill: "55-85", speed: "55-80", stamina: "35-60" }
+  }
+  },
+  {
+  name: "Oinkologne",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-40", jump: "15-30", skill: "20-40", speed: "25-45", stamina: "40-70" }
+  }
+  },
+  {
+  name: "Palafin",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Dolphin",
+  modes: {
+    WATER: { accel: "45-70", jump: "35-60", skill: "50-80", speed: "45-75", stamina: "40-70" }
+  }
+  },
+  {
+  name: "Quaquaval",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse & Dolphin",
+  modes: {
+    LAND:  { accel: "45-70", jump: "25-45", skill: "55-80", speed: "40-65", stamina: "35-60" },
+    WATER: { accel: "50-75", jump: "30-55", skill: "60-85", speed: "45-75", stamina: "40-70" }
+  }
+  },
+  {
+  name: "Skeledirge",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-40", jump: "20-35", skill: "45-75", speed: "25-45", stamina: "45-80" }
+  }
+  },
+  {
+  name: "Spidops",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-35", jump: "15-30", skill: "35-65", speed: "20-40", stamina: "40-65" }
+  }
+  },
+  {
+  name: "Toedscruel",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-40", jump: "15-30", skill: "30-60", speed: "30-55", stamina: "35-65" }
+  }
+  },
+  {
+  name: "Veluza",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Dolphin",
+  modes: {
+    WATER: { accel: "50-80", jump: "20-40", skill: "40-70", speed: "45-75", stamina: "35-70" }
+  }
+  },
+  {
+  name: "Walkingwake",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse & Dolphin",
+  modes: {
+    LAND:  { accel: "35-60", jump: "25-45", skill: "25-45", speed: "35-60", stamina: "40-70" },
+    WATER: { accel: "40-70", jump: "30-55", skill: "35-60", speed: "45-75", stamina: "45-75" }
+  }
+  },
+  {
+  name: "Appletun",
+  target: "1 Seat",
+  modelFrom: "Missingmon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "25-40", jump: "10-20", skill: "20-35", speed: "25-40", stamina: "50-70" }
+  }
+  },
+  {
+  name: "Archaludon",
+  target: "1 Seat",
+  modelFrom: "Missingmon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "25-40", jump: "15-30", skill: "25-40", speed: "25-40", stamina: "60-80" }
+  }
+  },
+  {
+  name: "Buzzwole",
+  target: "1 Seat",
+  modelFrom: "Missingmon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "30-45", jump: "20-35", skill: "30-45", speed: "30-45", stamina: "60-85" }
+  }
+  },
+  {
+  name: "Cobalion",
+  target: "1 Seat",
+  modelFrom: "Missingmon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "35-50", jump: "30-45", skill: "35-55", speed: "35-55", stamina: "70-95" }
+  }
+  },
+  {
+  name: "Ironcrown",
+  target: "1 Seat",
+  modelFrom: "Missingmon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "35-50", jump: "30-45", skill: "35-55", speed: "35-55", stamina: "70-95" }
+  }
+  },
+  {
+  name: "Melmetal",
+  target: "1 Seat",
+  modelFrom: "Missingmon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-35", jump: "15-25", skill: "25-40", speed: "20-35", stamina: "80-110" }
+  }
+  },
+  {
+  name: "Screamtail",
+  target: "1 Seat",
+  modelFrom: "Missingmon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "30-45", jump: "20-35", skill: "30-45", speed: "25-40", stamina: "55-75" }
+  }
+  },
+  {
+  name: "Stakataka",
+  target: "1 Seat",
+  modelFrom: "Missingmon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "15-25", jump: "5-15", skill: "20-30", speed: "15-25", stamina: "90-120" }
+  }
+  },
+  {
+  name: "Terrakion",
+  target: "1 Seat",
+  modelFrom: "Missingmon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "35-50", jump: "30-45", skill: "35-55", speed: "35-55", stamina: "70-95" }
+  }
+  },
 ];
 
 const PAGES = [

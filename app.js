@@ -121,7 +121,71 @@ const FAKE_RIDE_DATA = [
       LAND: { accel: "10-40", jump: "10-20", skill: "80-100", speed: "10-30", stamina: "10-20" },
       AIR:  { accel: "45-70", jump: "45-75", skill: "25-55", speed: "35-65", stamina: "25-100" }
     }
+  },
+  {
+  name: "Golem",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-35", jump: "10-20", skill: "25-40", speed: "18-28", stamina: "65-95" }
   }
+  },
+  {
+  name: "Jolteon",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "45-75", jump: "25-45", skill: "35-60", speed: "40-70", stamina: "20-40" }
+  }
+  },
+  {
+  name: "Kangaskhan",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "50-75", jump: "25-45", skill: "30-50", speed: "45-65", stamina: "55-80" }
+  }
+  },
+  {
+  name: "Kingler",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse & Submarine",
+  modes: {
+    LAND:  { accel: "25-50", jump: "10-25", skill: "20-40", speed: "20-40", stamina: "30-55" },
+    WATER: { accel: "35-60", jump: "15-35", skill: "45-70", speed: "30-55", stamina: "40-75" }
+  }
+  },
+  {
+  name: "Lickitung",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "5-20", jump: "10-25", skill: "5-20", speed: "10-25", stamina: "25-45" }
+  }
+  },
+  {
+  name: "Machamp",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "50-70", jump: "55-75", skill: "70-90", speed: "45-65", stamina: "80-100" }
+  }
+  },
+  {
+  name: "Muk",
+  target: "1 Seat",
+  modelFrom: "Base Cobblemon",
+  rideStyle: "Horse",
+  modes: {
+    LAND: { accel: "20-40", jump: "10-25", skill: "20-40", speed: "25-45", stamina: "70-95" }
+  }
+  },
 ];
 
 const PAGES = [

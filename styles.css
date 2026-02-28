@@ -323,6 +323,48 @@ button.good{
 .rideControls select{ min-width:140px; }
 .rideControls .muted.small{ color: var(--muted); font-size:12px; }
 
+/* Custom checkbox styling */
+.rideFilterCheckbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: rgba(255,255,255,.02);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.rideFilterCheckbox:hover {
+  border-color: var(--accent);
+  background: rgba(124,92,255,.12);
+}
+
+.rideFilterCheckbox:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.rideFilterCheckbox:checked::after {
+  content: '✓';
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  color: var(--bg);
+  font-weight: bold;
+  font-size: 9px;
+  line-height: 1;
+}
+
+.rideFilterCheckbox:focus {
+  outline: 1px solid rgba(124,92,255,.6);
+  outline-offset: 1px;
+}
+
 /* --- Ride page layout (extended + nice) --- */
 .rideLayout{
   display:grid;

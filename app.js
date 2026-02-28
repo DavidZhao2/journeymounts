@@ -2391,17 +2391,30 @@ function renderRideStatsPage(){
     <h1>Ride Stats</h1>
     <p class="muted">All Ride Stats for Version 1.8</p>
     <!-- Controls -->
-    <div class="rideControls" style="margin-bottom:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
-      <input id="rideSearchInput" placeholder="Search Pokémon" style="padding:6px;min-width:160px;" />
-      <select id="rideFilterSelect" style="padding:6px;">
-        <option value="ALL">All / Unsorted</option>
-        <option value="FASTEST">Fastest</option>
-        <option value="SLOWEST">Slowest</option>
-        <option value="AIR">Has AIR</option>
-        <option value="WATER">Has WATER</option>
-        <option value="LAND">Has LAND</option>
-      </select>
-      <div class="muted small">Tip: type to search, then choose a filter.</div>
+    <div class="rideControls" style="margin-bottom:20px;">
+      <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+        <input id="rideSearchInput" placeholder="Search Pokémon by name" style="padding:8px;min-width:200px;" />
+        <select id="rideSortSelect" style="padding:8px;">
+          <option value="UNSORTED">Unsorted</option>
+          <option value="FASTEST">Fastest Rides</option>
+          <option value="SLOWEST">Slowest Rides</option>
+        </select>
+
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+          <label style="display:flex;align-items:center;gap:6px;cursor:pointer;">
+            <input type="checkbox" id="filterLand" class="rideFilterCheckbox" value="LAND" style="cursor:pointer;" />
+            <span style="font-size:14px;">Land</span>
+          </label>
+          <label style="display:flex;align-items:center;gap:6px;cursor:pointer;">
+            <input type="checkbox" id="filterAir" class="rideFilterCheckbox" value="AIR" style="cursor:pointer;" />
+            <span style="font-size:14px;">Air</span>
+          </label>
+          <label style="display:flex;align-items:center;gap:6px;cursor:pointer;">
+            <input type="checkbox" id="filterWater" class="rideFilterCheckbox" value="WATER" style="cursor:pointer;" />
+            <span style="font-size:14px;">Water</span>
+          </label>
+        </div>
+      </div>
     </div>
 
     <!-- Desktop table -->
@@ -2492,21 +2505,36 @@ function getRideScoreForSort(p){
 
 function getFilteredRides(){
   const qEl = document.getElementById('rideSearchInput');
-  const sel = document.getElementById('rideFilterSelect');
+  const sortEl = document.getElementById('rideSortSelect');
   const q = qEl ? qEl.value.trim().toLowerCase() : '';
-  const filter = sel ? sel.value : 'ALL';
+  const sort = sortEl ? sortEl.value : 'UNSORTED';
+
+  // Get selected filter checkboxes
+  const selectedFilters = [];
+  const landCheck = document.getElementById('filterLand');
+  const airCheck = document.getElementById('filterAir');
+  const waterCheck = document.getElementById('filterWater');
+  if (landCheck && landCheck.checked) selectedFilters.push('LAND');
+  if (airCheck && airCheck.checked) selectedFilters.push('AIR');
+  if (waterCheck && waterCheck.checked) selectedFilters.push('WATER');
 
   let list = FAKE_RIDE_DATA.slice();
 
+  // Apply search filter
   if (q) list = list.filter(p => p.name.toLowerCase().includes(q));
 
-  if (filter === 'AIR' || filter === 'WATER' || filter === 'LAND'){
-    list = list.filter(p => Object.keys(p.modes||{}).includes(filter));
+  // Apply mode filters (show only pokémon that have ALL selected modes)
+  if (selectedFilters.length > 0){
+    list = list.filter(p => {
+      const modesAvailable = Object.keys(p.modes || {});
+      return selectedFilters.every(f => modesAvailable.includes(f));
+    });
   }
 
-  if (filter === 'FASTEST'){
+  // Apply sorting
+  if (sort === 'FASTEST'){
     list.sort((a,b) => getRideScoreForSort(b) - getRideScoreForSort(a));
-  } else if (filter === 'SLOWEST'){
+  } else if (sort === 'SLOWEST'){
     list.sort((a,b) => getRideScoreForSort(a) - getRideScoreForSort(b));
   }
 
@@ -2565,14 +2593,32 @@ function updateRideStatsDisplay(){
 
 function wireRideStatsControls(){
   const qEl = document.getElementById('rideSearchInput');
-  const sel = document.getElementById('rideFilterSelect');
+  const sortEl = document.getElementById('rideSortSelect');
+  const landCheck = document.getElementById('filterLand');
+  const airCheck = document.getElementById('filterAir');
+  const waterCheck = document.getElementById('filterWater');
+
+  const handleUpdate = () => updateRideStatsDisplay();
+
   if (qEl){
-    qEl.removeEventListener('input', updateRideStatsDisplay);
-    qEl.addEventListener('input', updateRideStatsDisplay);
+    qEl.removeEventListener('input', handleUpdate);
+    qEl.addEventListener('input', handleUpdate);
   }
-  if (sel){
-    sel.removeEventListener('change', updateRideStatsDisplay);
-    sel.addEventListener('change', updateRideStatsDisplay);
+  if (sortEl){
+    sortEl.removeEventListener('change', handleUpdate);
+    sortEl.addEventListener('change', handleUpdate);
+  }
+  if (landCheck){
+    landCheck.removeEventListener('change', handleUpdate);
+    landCheck.addEventListener('change', handleUpdate);
+  }
+  if (airCheck){
+    airCheck.removeEventListener('change', handleUpdate);
+    airCheck.addEventListener('change', handleUpdate);
+  }
+  if (waterCheck){
+    waterCheck.removeEventListener('change', handleUpdate);
+    waterCheck.addEventListener('change', handleUpdate);
   }
 }
 
